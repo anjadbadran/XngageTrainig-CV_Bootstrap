@@ -1,0 +1,22 @@
+.profile-img {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    margin: -170px 0 20px;
+}
+
+.download {
+    background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+}
+
+.personal-info {
+    position: sticky;
+    top: 130px;
+}
+
+@media only screen and (max-width: 1399px) {
+    .profile-img {
+        margin: 0 auto;
+    }
+
+}

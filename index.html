@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="styles/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header row px-4 d-flex justify-content-between">
+        <div class="col-6 px-4">
+          <div>
+            <image src="assets/images/logo-2.webp" alt="Bostami Logo" />
+          </div>
+        </div>
+
+        <div class="col-6 px-4">
+          <div class="buttons d-flex align-items-center">
+            <button
+              class="ms-auto me-2 mode-btn btn btn-light rounded-circle d-flex align-items-center justify-content-center">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button
+              class="close-icon btn rounded-circle d-flex align-items-center justify-content-center  d-lg-none">
+              <label for="close-mobile-menue">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </button>
+
+          </div>
+        </div>
+        <input type="checkbox" class="close-mobile-menue d-none"
+          id="close-mobile-menue">
+        <div class=" position-relative mt-4 mobile-menue-wrraper">
+          <ul
+            class="bg-light position-absolute mobile-menue w-100 z-2 list-unstyled px-5 py-4 rounded-4">
+            <li class="py-2 px-4">
+              <a class="active text-decoration-none" href="javascript: void(0)">
+                <i class="fa-regular fa-user me-2"></i>
+                <small>About</small>
+              </a>
+            </li>
+            <li class="py-2 px-4 body-txt">
+              <a>
+                <i class="fa-regular fa-file me-2"></i>
+                <small>Resume</small>
+              </a>
+            </li>
+            <li class="py-2 px-4 body-txt">
+              <a>
+                <i class="fa-solid fa-briefcase text-large me-2"></i>
+                <small>Works</small>
+              </a>
+            </li>
+            <li class="py-2 px-4 body-txt">
+              <a>
+                <i class="fa-brands fa-blogger me-2"></i>
+                <small>Blogs</small>
+              </a>
+            </li>
+            <li class="py-2 px-4 body-txt">
+              <a>
+                <i class="fa-regular fa-address-book  me-2"></i>
+                <small>Contact</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-md-12 col-lg-4">
+          <div class="py-5 rounded-4 bg-light personal-info">
+            <div class="profile-img rounded-4 mx-auto bottom-50">
+              <img src="assets/images/image (1).webp"
+                class="  img-fluid rounded-4 " alt="Profile Image">
+            </div>
+
+            <p class="text-center mt-5  fs-2 fw-medium">Anjad Badran</p>
+
+            <div class="row justify-content-center">
+              <p class="col-5 text-center bg-body-secondary p-2 rounded-1 fs-6">Front-end developer</p>
+            </div>
+
+            <div class="row justify-content-center">
+              <span class="col-1 px-4 d-flex justify-content-center align-items-center bg-body-secondary rounded-2 me-2">
+                <i class="fa-brands fa-facebook-f p-3"></i>
+              </span>
+
+              <span class="col-1 px-4 d-flex justify-content-center align-items-center bg-body-secondary rounded-2 me-2">
+                <i class="fa-brands fa-instagram p-3"
+                  style="color: #bf4592;"></i>
+              </span>
+
+              <span class="col-1 px-4 d-flex justify-content-center align-items-center bg-body-secondary rounded-2 me-2">
+                <i class="fa-brands fa-twitter p-3"
+                  style="color: #74C0FC;"></i>
+              </span>
+
+              <span class="col-1 px-4 d-flex justify-content-center align-items-center bg-body-secondary rounded-2 ">
+                <i class="fa-brands fa-linkedin-in "></i>
+              </span>
+            </div>
+
+            <ul class="list-group list-group-flush my-5 py-3  px-4 rounded-4 bg-body-secondary w-75 m-auto">
+              <li class="list-group-item d-flex bg-body-secondary px-0 py-2">
+                <div class="p-2 bg-white rounded-2 me-2">
+                  <img src="assets/images/pesonal-imgs/smartphone (1).png" />
+                </div>
+
+                <div>
+                  <small class="fw-light">Phone</small>
+                  <p class="my-0">+123 456 789</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex bg-body-secondary px-0 py-2">
+                <div class="p-2 bg-white rounded-2 me-2">
+                  <img src="assets/images/pesonal-imgs/open.png" />
+                </div>
+
+                <div>
+                  <small class="fw-light">Email</small>
+                  <p class="my-0 word-break">anjad@gmail.com</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex bg-body-secondary px-0 py-2">
+                <div class="p-2 bg-white rounded-2 me-2">
+                  <img src="assets/images/pesonal-imgs/pin.png" />
+                </div>
+
+                <div>
+                  <small class="fw-light">Location</small>
+                  <p class="my-0">Palestine</p>
+                </div>
+              </li>
+
+              <li class="list-group-item d-flex bg-body-secondary px-0 py-2">
+                <div class="p-2 bg-white rounded-2 me-2">
+                  <img src="assets/images/pesonal-imgs/calendar.png" />
+                </div>
+
+                <div>
+                  <small class="fw-light">Birthday</small>
+                  <p class="my-0">Jun 21</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="row ">
+              <button
+                class="download w-50 mx-auto btn text-white py-3 rounded-4 align-middle"
+                type="button">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-8 rounded-4">
+            <div class="row mb-4 d-md-none d-lg-block">
+              <div class="offset-lg-4 col-lg-8 ">
+                  <nav class="navbar main-menue navbar-expand-lg bg-light rounded-4">
+                    <div class="container-fluid">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+                        <li class="nav-item  p-3 rounded-4 bg-body-secondary me-3 active">
+                          <i class="fa-regular fa-user"></i>
+                          <small class=" mb-0 d-block">About</small>
+                        </li>
+
+                        <li class="nav-item p-3 rounded-4 bg-body-secondary me-3">
+                          <i class="fa-regular fa-file"></i>
+                          <small class="mb-0 d-block ">Resume</small>
+                        </li>
+
+                        <li class="nav-item p-3 rounded-4 bg-body-secondary me-3">
+                          <i class="fa-solid fa-briefcase text-large"></i>
+                          <small class="mb-0 d-block p-1">Works</small>
+                        </li>
+
+                        <li class="nav-item p-3 rounded-4 bg-body-secondary me-3">
+                          <i class="fa-brands fa-blogger"></i>
+                          <small class="mb-0 d-block p-1">Blogs</small>
+                        </li>
+
+                        <li class="nav-item p-3 rounded-4 bg-body-secondary ">
+                          <i class="fa-regular fa-address-book"></i>
+                          <small class="mb-0 d-block p-1">Contact</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+              </div>
+            </div>
+           
+            <div class="row about">
+              <div class="col-lg-12">
+                <div class="bg-light rounded-4">
+                  <h1 class="pt-5 pb-3 position-relative px-5 d-inline-block">About</h1>
+
+                  <p class="mb-0 body-txt px-5">
+                    I'm Creative Director and UI/UX Designer from Sydney,
+                    Australia, working in web development and print media.
+                    I enjoy turning complex problems into simple, beautiful
+                    and intuitive designs. <br><br>
+                    My aim is to bring across your message and identity in the
+                    most creative way. I created web design for many
+                    famous brand companies.
+                  </p>
+
+                  <h2 class="px-5 pb-5 pt-3">What I Do</h2>
+
+                  <div class="row what-i-do-wrapper px-5">
+                    <div class="col-md-12 col-lg-6">
+                      <div class="box mb-4  p-4 rounded-4 d-flex">
+                        <div class="me-3 icon-wrapper">
+                          <image src="assets/images/what-i-do/palette (1).png" class="w-100" />
+                        </div>
+
+                        <div>
+                          <h5>Ui/Ux Design</h5>
+                          <p class="body-txt">
+                            Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit,
+                            sed diam euismod tincidunt volutpat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+                      <div class="box mb-3  p-4 rounded-4 d-flex">
+                        <div class="me-3 icon-wrapper">
+                          <image src="assets/images/what-i-do/programming.png" class="w-100" />
+                        </div>
+
+                        <div>
+                          <h5>App Developement</h5>
+                          <p class="body-txt">
+                            Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit,
+                            sed diam euismod tincidunt volutpat.
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+                      <div class="box mb-3 p-4 rounded-4 d-flex">
+                        <div class="me-3 icon-wrapper">
+                          <image src="assets/images/what-i-do/camera.png" class="w-100" />
+                        </div>
+                        <div>
+                          <h5>Photography</h5>
+                          <p class="body-txt">
+                            Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit,
+                            sed diam euismod tincidunt volutpat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6">
+                      <div class="box mb-3 p-4 rounded-4 d-flex">
+                        <div class="me-3 icon-wrapper">
+                          <image src="assets/images/what-i-do/web.png" class="w-100" />
+                        </div>
+                        <div>
+                          <h5>Web Development</h5>
+                          <p class="body-txt">
+                            Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit,
+                            sed diam euismod tincidunt volutpat.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row w-100 carousel py-5 bg-body-secondary px-4 mt-5 ms-0">
+                    <h3 class="text-center">Client</h3>
+
+                    <div class="d-flex mt-4 text-end ">
+                      <div class=" me-3 p-4">
+                        <image src="assets/images/client-logo-1.png"
+                          class="img-fluid" />
+                      </div>
+
+                      <div class=" me-3 p-4">
+                        <image src="assets/images/client-logo-2.webp"
+                          class="img-fluid" />
+                      </div>
+
+                      <div class=" me-3 p-4">
+                        <image src="assets/images/client-logo-3.webp"
+                          class="img-fluid" />
+                      </div>
+
+                      <div class=" me-3 p-4">
+                        <image src="assets/images/client-logo-4.webp"
+                          class="img-fluid" />
+                      </div>
+
+                      <div class="p-4">
+                        <image src="assets/images/client-logo-1.png"
+                          class="img-fluid" />
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <footer class="mt-4 text-end  py-2">
+                    <p class="text-center text-muted">© 2024 All Rights
+                      Reserved by elite-themes24.</p>
+                  </footer>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

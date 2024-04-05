@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --theme-secodery: #fa5252;
+  --light-blue: #eef5fa;
+  --light-pink: #fff4f4;
+  --inverse: #fff;
+  --orange: #fa5252;
+  --dark-pink: #e12a72;
+  --blue: blue;
+  --body-txt: #44566c;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../../assets/images/page-bg-1.jpg");
+  background-size: cover;
+  background-position: 50% 80%;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.body-txt {
+  color: var(--body-txt);
+}
+
+.header {
+  margin-bottom: 300px;
+  margin-top: 80px;
+}
+.header .mode-btn {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.header .mode-btn i {
+  font-size: 22px;
+}
+.header .mode-btn:hover {
+  background-color: var(--orange);
+  color: var(--inverse);
+}
+.header .close-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+  color: var(--inverse);
+}
+.header .close-icon:hover {
+  background: linear-gradient(var(--blue), var(--blue));
+}
+.header .mobile-menue-wrraper {
+  display: none;
+}
+.header .mobile-menue {
+  left: 0;
+}
+.header #close-mobile-menue:checked ~ .mobile-menue-wrraper {
+  display: block;
+}
+
+@media only screen and (max-width: 1399px) {
+  .header {
+    margin-bottom: 50px;
+  }
+}
+.profile-img {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  margin: -170px 0 20px;
+}
+
+.download {
+  background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+}
+
+.personal-info {
+  position: sticky;
+  top: 130px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .profile-img {
+    margin: 0 auto;
+  }
+}
+.main-menue .navbar-nav {
+  width: 100%;
+}
+.main-menue .nav-item {
+  width: 90px;
+  height: 90px;
+}
+.main-menue .nav-item:hover {
+  background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+  color: var(--inverse);
+}
+.main-menue .active {
+  background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+  color: var(--inverse);
+}
+
+@media only screen and (max-width: 1200px) {
+  .offset-lg-4 {
+    margin-left: 20%;
+  }
+  .main-menue {
+    width: 120%;
+  }
+  .main-menue .nav-item {
+    width: 80px;
+    height: 80px;
+  }
+}
+.about h1::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(80deg, var(--orange), var(--dark-pink));
+  bottom: 35%;
+  left: 90%;
+}
+
+.what-i-do-wrapper div:nth-child(1) .box,
+.what-i-do-wrapper div:nth-child(4) .box {
+  background-color: var(--light-pink);
+}
+
+.what-i-do-wrapper div:nth-child(2) .box,
+.what-i-do-wrapper div:nth-child(3) .box {
+  background-color: var(--light-blue);
+}
+
+.what-i-do-wrapper .icon-wrapper {
+  width: 100px;
+}
